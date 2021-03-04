@@ -5,24 +5,24 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeClass;
-import org.testng.Reporter;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class T1_Test {
-  @Test(dataProvider = "dp")
-  public void f(Integer n, String s) {
-	  Reporter.log("this is string ");
+public class T6_Test {
+  @Test
+  public void f() {
 	  
+	  JavascriptExecutor js = (JavascriptExecutor) driver;
+	  js.executeScript("window.scrollBy(0,1000)");
   }
- 
-  
   @BeforeMethod
   public void beforeMethod() {
-	 
   }
 
   @AfterMethod
@@ -37,9 +37,17 @@ public class T1_Test {
       new Object[] { 2, "b" },
     };
   }
+  
+  WebDriver driver;
   @BeforeClass
   public void beforeClass() {
-	  
+	  System.setProperty("webdriver.chrome.driver","C:\\Users\\123\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		String url="http://openclinic.sourceforge.net/openclinic/home/index.php";
+		driver.get(url);
+
   }
 
   @AfterClass
