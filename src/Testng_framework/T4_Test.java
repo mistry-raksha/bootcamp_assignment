@@ -73,6 +73,8 @@ public class T4_Test {
 
   @AfterClass
   public void afterClass() {
+	  
+	  driver.quit();
   }
 
   @BeforeTest

@@ -33,7 +33,7 @@ public class T5_Test {
 		{
 			
 			String ab=url1.getText();
-			if(ab.equalsIgnoreCase("Hello India"))
+			if(ab.equalsIgnoreCase("Hello"))
 			{
 				url1.click();
 				break;
@@ -76,6 +76,7 @@ public class T5_Test {
 
   @AfterClass
   public void afterClass() {
+	  driver.quit();
   }
 
   @BeforeTest

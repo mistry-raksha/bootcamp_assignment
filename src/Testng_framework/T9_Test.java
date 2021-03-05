@@ -97,6 +97,7 @@ public class T9_Test {
 
   @AfterClass
   public void afterClass() {
+	  driver.quit();
   }
 
   @BeforeTest

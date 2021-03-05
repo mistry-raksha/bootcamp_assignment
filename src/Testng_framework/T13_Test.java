@@ -27,20 +27,13 @@ public class T13_Test {
 	  
 	  driver.findElement(By.name("ConfirmPasswd")).sendKeys("Raksha@2401");
 	  Thread.sleep(2000);
+	   
+	  System.out.println("Value of firstname input: "+driver.findElement(By.id("firstName")).getAttribute("value"));
 	  
 	  driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button")).click();
 	  Thread.sleep(2000);
-	  
-	  
-	  
-	  driver.findElement(By.id("phoneNumberId")).sendKeys("");
-	  Thread.sleep(2000);
-	  
-	  
-	  
-//	  String firstname=driver.findElement(By.id("firstname")).getAttribute("firstname");
-//	  System.out.println("Value of firstname input: "+firstname);
-//	  
+	
+	 
   }
  
 
@@ -59,6 +52,7 @@ public class T13_Test {
 
   @AfterClass
   public void afterClass() {
+	  driver.quit();
   }
 
   @BeforeTest

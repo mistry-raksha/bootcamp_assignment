@@ -76,6 +76,7 @@ public class T2_Test {
 
   @AfterClass
   public void afterClass() {
+	  driver.quit();
   }
 
   @BeforeTest

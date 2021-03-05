@@ -52,6 +52,7 @@ public class T6_Test {
 
   @AfterClass
   public void afterClass() {
+	  driver.quit();
   }
 
   @BeforeTest
