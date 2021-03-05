@@ -3,19 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testng_framework.T9_Test">
+      <class name="Testng_framework.T17_Test">
         <methods>
-          <include name="beforeClass"/>
-          <include name="f"/>
-          <include name="beforeMethod"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="f"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- Testng_framework.T9_Test -->
+      </class> <!-- Testng_framework.T17_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
