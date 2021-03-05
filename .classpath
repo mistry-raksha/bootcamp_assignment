@@ -15,5 +15,12 @@
 	<classpathentry kind="lib" path="C:/Users/123/Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/123/Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Users/123/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/123/Downloads/jar_files/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
